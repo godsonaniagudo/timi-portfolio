@@ -82,97 +82,24 @@ export default function Home() {
                       <p>Hi</p>
                     </div>
                   </Grid> */}
+
+                  {
+                    portfolio.slice(0, 9).map((item, index ) => 
+                    <Grid item xl={6} lg={6} md={6} >
+                      <Link href={`/case-study/${index}`}>
+                        <div style={{borderColor: item.color}} className={Styles.portfolioItem}>
+                          <img src={item.imageURL}/> 
+
+                          <div>
+                            <p style={{color: item.color}}>{item.title}</p>
+                          </div>
+                        </div>
+                      </Link>
+                    </Grid>)
+                  }
                   
 
-                  <Paper item xl={3} lg={6} md={6} >
-                    <div style={{borderColor: portfolio[0].color}} className={Styles.portfolioItem} >
-                      <img src={portfolio[0].imageURL}/> 
-                      
-                      <div>
-                        <p style={{color: portfolio[0].color}}>{portfolio[0].title}</p>
-                      </div>
-                    </div>
-                  </Paper>
-
-                  <Grid item xl={6} lg={6} md={6} >
-                    <div style={{borderColor: portfolio[1].color}} className={Styles.portfolioItem}>
-                      <img src={portfolio[1].imageURL}/> 
-
-                      <div>
-                        <p style={{color: portfolio[1].color}}>{portfolio[1].title}</p>
-                      </div>
-                    </div>
-                  </Grid>
-
-                  <Grid item xl={2} lg={6} md={6}  >
-                    <div style={{borderColor: portfolio[2].color}} className={Styles.portfolioItem}>
-                      <img src={portfolio[2].imageURL}/> 
-
-                      <div>
-                        <p style={{color: portfolio[2].color}}>{portfolio[2].title}</p>
-                      </div>
-                    </div>
-                  </Grid>
-
-                  <Grid item xl={3} lg={6} md={6} >
-                    <div style={{borderColor: portfolio[3].color}} className={Styles.portfolioItem}>
-                      <img src={portfolio[3].imageURL}/> 
-
-                      <div>
-                        <p style={{color: portfolio[3].color}}>{portfolio[3].title}</p>
-                      </div>
-                    </div>
-                  </Grid>
-
-                  <Grid item xl={6} lg={6} md={6} >
-                    <div style={{borderColor: portfolio[4].color}} className={Styles.portfolioItem}>
-                      <img src={portfolio[4].imageURL}/> 
-
-                      <div>
-                        <p style={{color: portfolio[4].color}}>{portfolio[4].title}</p>
-                      </div>
-                    </div>
-                  </Grid>
-
-                  <Grid item xl={3} lg={6} md={6} >
-                    <div style={{borderColor: portfolio[5].color}} className={Styles.portfolioItem}>
-                      <img src={portfolio[5].imageURL}/> 
-
-                      <div>
-                        <p style={{color: portfolio[5].color}}>{portfolio[5].title}</p>
-                      </div>
-                    </div>
-                  </Grid>
-
-                  <Grid item xl={6} lg={6} md={6} >
-                    <div style={{borderColor: portfolio[6].color}} className={Styles.portfolioItem}>
-                      <img src={portfolio[6].imageURL}/> 
-
-                      <div>
-                        <p style={{color: portfolio[6].color}}>{portfolio[6].title}</p>
-                      </div>
-                    </div>
-                  </Grid>
-
-                  <Grid item xl={3} lg={6} md={6} >
-                    <div style={{borderColor: portfolio[7].color}} className={Styles.portfolioItem}>
-                      <img src={portfolio[7].imageURL}/> 
-
-                      <div>
-                        <p style={{color: portfolio[7].color}}>{portfolio[7].title}</p>
-                      </div>
-                    </div>
-                  </Grid>
-
-                  <Grid item xl={3} lg={6} md={6} >
-                    <div style={{borderColor: portfolio[8].color}} className={Styles.portfolioItem}>
-                      <img src={portfolio[8].imageURL}/> 
-
-                      <div>
-                        <p style={{color: portfolio[8].color}}>{portfolio[8].title}</p>
-                      </div>
-                    </div>
-                  </Grid>
+                  
               </Masonry>
 
               <div className={Styles.seeMoreButtonContainer}>

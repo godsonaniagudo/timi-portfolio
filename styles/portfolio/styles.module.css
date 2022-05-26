@@ -26,6 +26,7 @@
 .container header .headerLeft h1 {
   font-size: 4rem;
   margin: 0px;
+  color: #262626;
 }
 
 .container header .headerLeft div {
@@ -48,6 +49,7 @@
 .container header .headerRight p {
   font-size: 22px;
   width: 80%;
+  color: #262626;
 }
 
 .container .portfolioItem1 {
@@ -69,6 +71,8 @@
 
 .container .portfolioItem1 img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container .portfolioItem1 p {

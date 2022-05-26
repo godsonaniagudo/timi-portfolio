@@ -6,6 +6,7 @@ import avatar from "../components/Layout/images/avatar.png"
 import { portfolio } from '../portfolio';
 import { Masonry } from '@mui/lab';
 import { Grid } from '@mui/material';
+import Link from 'next/link';
 
 const Portfolio = () => {
     return (
@@ -59,21 +60,36 @@ const Portfolio = () => {
 
                         <p>{portfolio[0].description}</p>
 
-                        <button>View Case Study</button>
+                        <Link href={`/case-study/0`}><button style={Styles.visitProjectButton}>View Case Study</button></Link>
                     </div>
                 </div>
+
 
                 <div>
                     <Masonry container columns={2} spacing={10}>
                         {
                             portfolio.slice(1).map((item, index) => {
-                                return <Grid item xl={6} lg={6} md={6} >
-                                    <div className={Styles.portfolioItem1} style={item.displayType === "mobile" ? {display: "flex"} : {display: "block"}}>
-                                        <div style={item.displayType === "mobile" ? {width: "100%", paddingRight: "50px"} : {width: "100%"}}>
-                                            <img src={item.imageURL} />
-                                        </div>
+                                return <PortfolioItem item={item} studyID={index + 1} />
+                            })
+                        }
+                    </Masonry>
+                </div>
+            </div>
+        </div>
+    )
+}
 
-                                        <div style={{width: "100%"}}>
+export const PortfolioItem = ({item, type, studyID}) => {
+    return (
+        <Grid item xl={6} lg={6} md={6} >
+            <div className={Styles.portfolioItem1} style={type == "case-study" ? {display: "block"} : item.displayType === "mobile" ? {display: "flex"} : {display: "block"}}>
+                {
+                    type !== "case-study" && <div style={item.displayType === "mobile" ? {width: "100%", paddingRight: "50px"} : {width: "100%"}}>
+                    <img src={item.imageURL} />
+                </div>
+                }
+
+                <div style={{width: "100%"}}>
                                             <h2>{item.title}</h2>
 
                                             <table>
@@ -97,16 +113,18 @@ const Portfolio = () => {
 
                                             <p>{item.description}</p>
 
-                                            <button>View Case Study</button>
-                                        </div>
-                                    </div>
-                                </Grid>
-                            })
-                        }
-                    </Masonry>
+                                            {
+                                                type === "case-study" && <Link href={`#`}><button>Visit Project</button></Link>
+                                            }
+
+                                            {
+                                                type !== "case-study" && <Link href={`/case-study/${studyID}`}><button style={Styles.visitProjectButton}>View Case Study</button></Link>
+                                            }
+
+                                            
+                    </div>
                 </div>
-            </div>
-        </div>
+        </Grid>
     )
 }
 
