@@ -1,0 +1,309 @@
+.hero {
+  width: 100% !important;
+}
+
+.hero .heroContainer {
+  min-height: 70vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.hero .heroContent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  padding-top: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .heroContent .heroContentLeft {
+  width: 45%;
+}
+
+.hero .heroContent .heroContentLeft h1 {
+  font-size: 50px;
+  color: #262626;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0px;
+}
+
+.hero .heroContent .heroContentLeft p {
+  color: #262626;
+  margin-bottom: 50px;
+  width: 85%;
+}
+
+.hero .heroContent .heroContentLeft span button {
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero .heroContent .heroContentLeft span button:nth-child(1) {
+  background-color: #181819;
+  color: white;
+}
+
+.hero .heroContent .heroContentLeft span button:nth-child(2) {
+  background-color: white;
+  color: #262626;
+  border-style: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #8a8a8a;
+  margin-left: 30px;
+}
+
+.hero .heroContent .heroContentRight {
+  width: 40%;
+  height: 100%;
+  background-color: #262626;
+  border-radius: 20px;
+}
+
+.hero svg {
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.content {
+  margin-top: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content h2 {
+  font-size: 45px;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #181819;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.content .runnerText {
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  color: #595F51;
+  margin-bottom: 50px;
+}
+
+.seeMoreButtonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seeMoreButtonContainer button {
+  border-style: none;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #262626;
+  border-radius: 5px;
+  color: #262626;
+  font-size: 13px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.callToActionDiv {
+  background-color: #000000;
+  color: white;
+  margin-top: 120px;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.callToActionDiv .c2aLeft {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 60px;
+}
+
+.callToActionDiv .c2aLeft div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.callToActionDiv .c2aLeft div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.callToActionDiv .c2aLeft div:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.callToActionDiv .c2aRight {
+  width: 48%;
+}
+
+.callToActionDiv .c2aRight h2 {
+  font-size: 35px;
+  width: 95%;
+  margin-top: 0px;
+}
+
+.callToActionDiv .c2aRight p {
+  width: 85%;
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+
+.callToActionDiv .c2aRight button {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-style: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  color: white;
+  font-size: 12px;
+}
+
+.portfolioItem {
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 200;
+}
+
+.portfolioItem img {
+  border-radius: 10px;
+}
+
+.portfolioItem div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: none;
+}
+
+.portfolioItem div p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.portfolioItem:hover {
+  border-style: solid;
+}
+
+.portfolioItem:hover img {
+  border-radius: 11px;
+  z-index: -1;
+}
+
+.portfolioItem:hover div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=styles.module.css.map */

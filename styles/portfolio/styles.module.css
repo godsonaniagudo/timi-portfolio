@@ -1,0 +1,94 @@
+.container {
+  margin-left: 110px;
+  margin-right: 110px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header .headerLeft img {
+  min-width: auto !important;
+  min-height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.container header .headerLeft h1 {
+  font-size: 4rem;
+  margin: 0px;
+}
+
+.container header .headerLeft div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header .headerLeft div h1 {
+  margin-right: 10px;
+}
+
+.container header .headerRight {
+  padding-left: 100px;
+}
+
+.container header .headerRight p {
+  font-size: 22px;
+  width: 80%;
+}
+
+.container .portfolioItem1 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+}
+
+.container .portfolioItem1 tr td:nth-child(1) {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.container .portfolioItem1 h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.container .portfolioItem1 img {
+  width: 100%;
+}
+
+.container .portfolioItem1 p {
+  text-align: justify;
+}
+
+.container .portfolioItem1 button {
+  background-color: #181819;
+  font-size: 12px;
+  color: white;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container .portfolioItem1 > div {
+  width: 48%;
+}
+/*# sourceMappingURL=styles.module.css.map */
