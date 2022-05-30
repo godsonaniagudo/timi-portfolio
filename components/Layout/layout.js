@@ -28,11 +28,11 @@ const Layout = ({children}) => {
                         </Link>
 
                         <div>
-                            <Link href={"#"}>About Me</Link>
+                            <Link href={"/about"}>About Me</Link>
 
-                            <Link href={"#"}>Design</Link>
+                            <Link href={"/portfolio"}>Design</Link>
 
-                            <Link href={"#"}>Tutoring</Link>
+                            <Link href={"/tutoring"}>Tutoring</Link>
                         </div>
                     </div>
 
